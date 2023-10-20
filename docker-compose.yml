@@ -4,6 +4,11 @@
 version: '2'
 
 services:
+  composer:
+    image: composer
+    volumes:
+    - ./:/app
+    command: composer install --ignore-platform-reqs
   mariadb:
     image: docker.io/bitnami/mariadb:11.1
     environment:
@@ -24,3 +29,4 @@ services:
       - './my-project:/app'
     depends_on:
       - mariadb
+      - composer
