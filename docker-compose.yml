@@ -7,7 +7,7 @@ services:
   composer:
     image: composer
     volumes:
-    - ./:/app
+    - ./my-project:/app
     command: composer install --ignore-platform-reqs
   mariadb:
     image: docker.io/bitnami/mariadb:11.1
