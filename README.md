@@ -22,3 +22,6 @@ Uncaught Error: Failed opening required '/app/vendor/autoload.php' (include_path
 * <https://github.com/bitnami/containers/issues/30800>
 * <https://stackoverflow.com/a/46792094/7162445>
 * <https://stackoverflow.com/a/54818189/7162445>
+
+`docker-compose exec myapp php artisan list`?
+`docker-compose exec myapp composer install`?
